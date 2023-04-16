@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+  
+    <link href="https://fonts.cdnfonts.com/css/brown-college" rel="stylesheet">
+    <style>
+        @import url('https://fonts.cdnfonts.com/css/brown-college');
+    </style>
+      
+       
+    <title>Play-Time</title>
+</head>
+<body>
+    <section class="game">
+        <div class="title">Rock Paper Scissor</div>
+
+        <div class="score">
+            <div class="playerScore">
+                <h2>Player</h2>
+                <p class="p-count count">0</p>
+            </div>
+
+            <div class="computerScore">
+                <h2>Computer</h2>
+                <p class="c-count count">0</p>
+            </div>
+        </div>
+            <div class="move">Choose your Move</div>
+
+            <div class="movesleft">No. Of Moves left : 10</div>
+
+            <div class="options">
+                <button class="rock" value="rock"><img src="/Images/Rock.png" alt="Rock" data-choice="rock"></button>
+                <button class="paper" value="paper"><img src="/Images/paper.png" alt="Paper" data-choice="paper"></button>
+                <button class="scissor" value="scissor"><img src="/Images/Scissors.png" alt="Scissor" data-choice="sciddor"></button>
+                <!-- <button class="rock" value="rock">Rock</button>
+                <button class="paper">Paper</button>
+                <button class="scissor">Scissor</button> -->
+            </div>
+
+            <div class="result"></div>
+
+            <button class="reload"></button>
+        
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>

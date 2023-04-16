@@ -1,0 +1,113 @@
+*{
+    padding: 0;
+    margin: 0;
+    background: #eae1ab;
+    box-sizing: border-box;
+}
+
+.game{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    align-items: center;
+
+}
+
+.title{
+    font-size: 3.6rem;
+    position: absolute;
+    top:0;
+    z-index: 2;
+    margin-top: 100px;
+    /* font-family: 'Brown College', sans-serif; */                                       
+}
+.score{
+    display: flex;
+    width: 30vmax;
+    justify-content:space-evenly;
+    /* position: absolute; */
+    top: 70px;
+    z-index: 1;
+}
+
+.p-count,.c-count{
+    text-align: center;
+    font-size: 3rem;
+    margin-top: 4px;
+}
+
+.options{
+    display: flex;
+    justify-content: space-evenly;
+    /* align-items: center; */
+    margin-top: 3rem;
+    width: 30rem;
+}
+
+.rock,.paper,.scissor{
+    padding: 0.8rem;
+    /* position: absolute; */
+    /* width: 100px; */
+    /* border-radius: 10px; */
+    /* box-shadow: 10px; */
+    cursor: pointer;
+    border-color: rgb(255, 255, 255);
+    outline: none;
+    color: white;
+    background-color: rgb(129, 176, 215);
+}
+
+.move{
+    font-size: 1.7rem;
+    /* padding: 3rem; */
+    margin-top: 2.3rem;
+}
+
+.movesleft{
+    font-size: 1.2rem;
+    margin-top: 1.2rem;
+}
+
+.reload{
+    display: none;
+    margin-top: 2rem;
+    /* padding: 1rem; */
+    padding: 15px;
+    padding-left: 1.7rem;
+    width: 100px;
+    color: antiquewhite;
+    background-color: rgb(66, 201, 54);
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+img{
+    width: 80px;
+    background-color: transparent;
+    color: rgb(255, 255, 255);
+}
+.result{
+    font-size: 1.5rem;
+    margin-top: 40px;
+}
+
+@media screen and (max-width:612px) {
+    .title{
+        text-align: center;
+    }
+    .score{
+        position:absolute;
+        top: 200px;
+        width: 100vmax;
+    }
+    
+    .options{
+        width:100vmax;
+    }
+}
+
+
+
